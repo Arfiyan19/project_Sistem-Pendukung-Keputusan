@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Login &mdash; Sekolah Dasar</title>
+    <title>Login &mdash; Sistem Pendukung Keputusan</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}">
@@ -23,7 +23,7 @@
                 <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
                     <div class="p-4 m-3">
                         <img src="{{ url('assets/img/logo-asli.png') }}" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2">
-                        <h5 class="text-dark font-weight-normal">Aplikasi <span class="font-weight-bold">Inventaris Barang Sekolah</span></h5>
+                        <h5 class="text-dark font-weight-normal">Perhitungan <span class="font-weight-bold">Sistem Pendukung Keputusan</span></h5>
                         <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="">
                             @csrf
                             <div class="form-group">
@@ -62,7 +62,7 @@
                         </form>
 
                         <div class="text-center mt-5 text-small">
-                            Copyright &copy; Inventory
+                            Copyright &copy; Sistem Pendukung Keputusan
                         </div>
                     </div>
                 </div>
@@ -73,8 +73,8 @@
                                 <h1 class="mb-2 display-4 font-weight-bold" id="greetings"></h1>
                                 <h5 class="font-weight-normal text-muted-transparent">Indonesia</h5>
                             </div>
-                            Pembuat Aplikasi <a class="text-light bb" target="_blank" href="https://www.github.com/Arfiyan19/">
-                                Arfiyan Wahyu Pratama</a>
+                            Pembuat Aplikasi : <a class="text-light bb" target="_blank" href="https://www.github.com/Arfiyan19/">
+                                Kelompok 00 - Sistem Informasi Bisnis 3D</a>
                         </div>
                     </div>
                 </div>
