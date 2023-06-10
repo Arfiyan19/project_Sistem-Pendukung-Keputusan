@@ -41,8 +41,8 @@
                     name: $("#name_create").val(),
                     bobot: $("#bobot_create").val(),
                     atribut: $("#atribut_create").val(),
-                    bobot: $("#bobot_create").val(),
-                    
+                    code: $("#code_create").val(),
+
                 },
                 success: function(data) {
                     Swal.fire({

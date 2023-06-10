@@ -43,12 +43,11 @@ class KriteriaAjaxController extends Controller
             'atribut' => $request->atribut,
         ]);
 
-        return dd($kriteria);
-        
-        // return response()->json([
-        //     'success' => true,
-        //     'message' => 'Data berhasil disimpan'
-        // ]);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Data berhasil disimpan'
+        ]);
     }
 
     /**

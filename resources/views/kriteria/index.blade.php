@@ -57,10 +57,10 @@
 
 @push('modal')
 @include('kriteria.modal.create')
-@include('commodity-locations.modal.show')
-@include('commodity-locations.modal.edit')
+@include('kriteria.modal.show')
+@include('kriteria.modal.edit')
 @endpush
 
 @push('js')
-@include('commodity-locations._script')
+@include('kriteria._script')
 @endpush
