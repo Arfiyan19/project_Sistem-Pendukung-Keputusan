@@ -28,27 +28,21 @@
             })
         })
 
-        $("form[name='commodity_create']").submit(function(e) {
+        $("form[name='kriteria_create']").submit(function(e) {
             e.preventDefault();
             let token = $("input[name=_token]").val();
+            console.log(token);
 
             $.ajax({
                 type: "POST",
-                url: "commodities/json",
+                url: "kriteria/json",
                 data: {
                     _token: token,
-                    school_operational_assistance_id: $("#school_operational_assistance_id_create").val(),
-                    commodity_location_id: $("#commodity_location_id_create").val(),
-                    item_code: $("#item_code_create").val(),
                     name: $("#name_create").val(),
-                    brand: $("#brand_create").val(),
-                    material: $("#material_create").val(),
-                    date_of_purchase: $("#date_of_purchase_create").val(),
-                    condition: $("#condition_create").val(),
-                    quantity: $("#quantity_create").val(),
-                    price: $("#price_create").val(),
-                    price_per_item: $("#price_per_item_create").val(),
-                    note: $("#note_create").val(),
+                    bobot: $("#bobot_create").val(),
+                    atribut: $("#atribut_create").val(),
+                    bobot: $("#bobot_create").val(),
+                    
                 },
                 success: function(data) {
                     Swal.fire({
