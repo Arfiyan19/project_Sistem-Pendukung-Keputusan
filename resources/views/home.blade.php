@@ -9,10 +9,10 @@
       </div>
       <div class="card-wrap">
         <div class="card-header">
-          <h4>Total Barang</h4>
+          <h4>Total Alternatif</h4>
         </div>
         <div class="card-body">
-          {{ $commodity_count }}
+          {{ $alternatif }}
         </div>
       </div>
     </div>
@@ -24,10 +24,10 @@
       </div>
       <div class="card-wrap">
         <div class="card-header">
-          <h4>Kondisi Baik</h4>
+          <h4>Total Kriteria</h4>
         </div>
         <div class="card-body">
-          {{ $commodity_condition_good_count }}
+          {{ $criteria }}
         </div>
       </div>
     </div>

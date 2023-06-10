@@ -29,8 +29,8 @@
             <li class="nav-item dropdown {{ Request::segment(2) === 'kriteria' ? 'active' : '' }}">
                 <a href="{{ route('kriteria.index') }}" class="nav-link"><i class="fas fa-columns"></i> <span>Data Kriteria</span></a>
             </li>
-            <li class="nav-item dropdown {{ Request::segment(2) === 'bantuan-dana-operasional' ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('bantuan-dana-operasional.index') }}"><i class="far fa-square"></i> <span>Data Alternatif</span></a>
+            <li class="nav-item dropdown {{ Request::segment(2) === 'alternatif' ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('alternatif.index') }}"><i class="far fa-square"></i> <span>Data Alternatif</span></a>
             </li>
             <li class="nav-item dropdown {{ Request::segment(2) === 'ruang' ? 'active' : '' }}">
                 <a href="{{ route('ruang.index') }}" class="nav-link"><i class="fas fa-th"></i> <span>Perhitungan</span></a>

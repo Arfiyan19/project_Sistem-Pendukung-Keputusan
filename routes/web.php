@@ -44,7 +44,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('/bantuan-dana-operasional', 'SchoolOperationalAssistances\SchoolOperationalAssistance');
     Route::resource('/ruang', 'CommodityLocations\CommodityLocationController');
     Route::resource('/kriteria', 'KriteriaController');
-
+    //alternatif
+    Route::resource('/alternatif', 'AlternatifController');
+    //json alternatif
+    Route::resource('/alternatif/json', 'AlternatifAjaxController');
     Route::resource('/commodities/json', 'Commodities\Ajax\CommodityAjaxController');
     Route::resource('/school-operational/json', 'SchoolOperationalAssistances\Ajax\SchoolOperationalAssistanceAjaxController');
     Route::resource('/commodity-locations/json', 'CommodityLocations\Ajax\CommodityLocationAjaxController');
