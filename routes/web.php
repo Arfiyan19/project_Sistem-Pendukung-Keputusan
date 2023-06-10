@@ -44,6 +44,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('/bantuan-dana-operasional', 'SchoolOperationalAssistances\SchoolOperationalAssistance');
     Route::resource('/ruang', 'CommodityLocations\CommodityLocationController');
     Route::resource('/kriteria', 'KriteriaController');
+    Route::resource('/perhitungan', 'PerhitunganController');
     //alternatif
     Route::resource('/alternatif', 'AlternatifController');
     //json alternatif
