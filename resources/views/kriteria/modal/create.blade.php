@@ -19,41 +19,24 @@
               </div>
             </div>
 
-            <!-- <div class="col-lg-6">
-              <div class="form-group">
-                <label for="acquisition">Asal Perolehan</label>
-                <select class="custom-select" id="school_operational_assistance_id_create">
-                  <option selected>Pilih</option>
-                  
-                </select>
-              </div>
-            </div>
-          </div> -->
 
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="form-group">
-                <label for="name">Nama Kriteria</label>
-                <input type="text" class="form-control" id="name_create" name="name_create">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label for="name">Nama Kriteria</label>
+                  <input type="text" class="form-control" id="name_create" name="name_create">
+                </div>
               </div>
-            </div>
 
-            <div class="col-lg-4">
-              <div class="form-group">
-                <label for="brand">Bobot</label>
-                <input type="text" class="form-control" id="bobot_create" name="bobot_create">
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label for="brand">Bobot</label>
+                  <input type="text" class="form-control" id="bobot_create" name="bobot_create">
+                </div>
               </div>
-            </div>
 
-            <!-- <div class="col-lg-4">
-              <div class="form-group">
-                <label for="date_of_purchase">Tahun Pembelian</label>
-                <input type="date" class="form-control" id="date_of_purchase_create">
-              </div>
-            </div>
-          </div> -->
 
-          <!-- <div class="row">
+              <!-- <div class="row">
             <div class="col-lg-5">
               <div class="form-group">
                 <label for="material">Bahan</label>
@@ -71,20 +54,20 @@
               </div>
             </div> -->
 
-            <div class="col-lg-3">
-              <div class="form-group">
-                <label for="condition">Atribut Kriteria</label>
-                <select class="custom-select" id="atribut_create" name="atribut_create">
-                  <option selected>Pilih</option>
-                  <option value="Benefit">Benefit</option>
-                  <option value="Cost">Cost</option>
-                  <!-- <option value="3">Rusak Ringan</option> -->
-                </select>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label for="condition">Atribut Kriteria</label>
+                  <select class="custom-select" id="atribut_create" name="atribut_create">
+                    <option selected>Pilih</option>
+                    <option value="Benefit">Benefit</option>
+                    <option value="Cost">Cost</option>
+                    <!-- <option value="3">Rusak Ringan</option> -->
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
-          <hr>
-          <!-- <div class="row">
+            <hr>
+            <!-- <div class="row">
             <div class="col-lg-4">
               <div class="form-group">
                 <label for="quantity">Kuantitas</label>
@@ -107,7 +90,7 @@
             </div>
           </div> -->
 
-          <!-- <div class="row">
+            <!-- <div class="row">
             <div class="col-lg-12">
               <div class="form-group">
                 <label for="note">Keterangan</label>
@@ -115,10 +98,10 @@
               </div>
             </div>
           </div> -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-            <button type="submit" class="btn btn-primary">Tambah Data</button>
-          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+              <button type="submit" class="btn btn-primary">Tambah Data</button>
+            </div>
         </form>
       </div>
     </div>
