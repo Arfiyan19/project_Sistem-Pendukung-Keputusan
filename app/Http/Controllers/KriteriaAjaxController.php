@@ -69,7 +69,9 @@ class KriteriaAjaxController extends Controller
      */
     public function edit($id)
     {
-        //
+        $kriteria = Kriteria::findOrFail($id);
+
+        return response()->json(['status' => 200, 'message' => 'Success', 'data' => $kriteria], 200);
     }
 
     /**
@@ -92,6 +94,10 @@ class KriteriaAjaxController extends Controller
      */
     public function destroy($id)
     {
-        //
+        kriteria::where('id', $id)->delete();
+        return response()->json([
+            'success' => true,
+            'message' => 'Data berhasil dihapus'
+        ]);
     }
 }

@@ -35,10 +35,10 @@
               <td>{{ $data->code }}</td>
               <td>{{ $data->atribut }}</td>
               <td class="text-center">
-                <a data-id="{{ $data->id }}" class="btn btn-sm btn-info text-white show_modal" data-toggle="modal" data-target="#show_data$data">
+                <a data-id="{{ $data->id }}" class="btn btn-sm btn-info text-white show_modal" data-toggle="modal" data-target="#show_data">
                   <i class="fas fa-fw fa-info"></i>
                 </a>
-                <a data-id="{{ $data->id }}" class="btn btn-sm btn-success text-white swal-edit-button" data-toggle="modal" data-target="#data$data_edit_modal" data-placement="top" title="Ubah data">
+                <a data-id="{{ $data->id }}" class="btn btn-sm btn-success text-white swal-edit-button" data-toggle="modal" data-target="#kriteria_edit_modal" data-placement="top" title="Ubah data">
                   <i class="fas fa-fw fa-edit"></i>
                 </a>
                 <a data-id="{{ $data->id }}" class="btn btn-sm btn-danger text-white swal-delete-button" data-toggle="tooltip" data-placement="top" title="Hapus data">

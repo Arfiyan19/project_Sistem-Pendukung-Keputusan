@@ -83,25 +83,14 @@
             $("#swal-update-button").attr("data-id", id);
 
             $.ajax({
-                url: "commodities/json/" + id + "/edit",
+                url: "kriteria/json/" + id + "/edit",
                 type: "GET",
                 data: {
                     id: id,
                     _token: token
                 },
                 success: function(data) {
-                    $("#school_operational_assistance_id_edit").val(data.data.school_operational_assistance_id)
-                    $("#commodity_location_id_edit").val(data.data.commodity_location_id)
-                    $("#item_code_edit").val(data.data.item_code)
                     $("#name_edit").val(data.data.name)
-                    $("#brand_edit").val(data.data.brand)
-                    $("#material_edit").val(data.data.material)
-                    $("#date_of_purchase_edit").val(data.data.date_of_purchase)
-                    $("#condition_edit").val(data.data.condition)
-                    $("#quantity_edit").val(data.data.quantity)
-                    $("#price_edit").val(data.data.price)
-                    $("#price_per_item_edit").val(data.data.price_per_item)
-                    $("#note_edit").val(data.data.note)
                 },
                 error: function(data) {
                     Swal.fire("Gagal!", "Tidak dapat melihat info kategori buku.", "warning");
@@ -116,25 +105,13 @@
             let token = $("input[name=_token]").val();
 
             let name = $("#name_edit").val();
-            let description = $("#description_edit").val();
 
             $.ajax({
-                url: "commodities/json/" + id,
+                url: "kriteria/json/" + id,
                 type: "PUT",
                 data: {
                     _token: token,
-                    school_operational_assistance_id: $("#school_operational_assistance_id_edit").val(),
-                    commodity_location_id: $("#commodity_location_id_edit").val(),
-                    item_code: $("#item_code_edit").val(),
                     name: $("#name_edit").val(),
-                    brand: $("#brand_edit").val(),
-                    material: $("#material_edit").val(),
-                    date_of_purchase: $("#date_of_purchase_edit").val(),
-                    condition: $("#condition_edit").val(),
-                    quantity: $("#quantity_edit").val(),
-                    price: $("#price_edit").val(),
-                    price_per_item: $("#price_per_item_edit").val(),
-                    note: $("#note_edit").val(),
                 },
                 success: function(data) {
                     Swal.fire({
@@ -181,7 +158,7 @@
                     let id = $(this).data("id");
                     let token = $("input[name=_token]").val();
                     $.ajax({
-                        url: "commodities/json/" + id,
+                        url: "kriteria/json/" + id,
                         type: "DELETE",
                         data: {
                             id: id,
