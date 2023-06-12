@@ -78,9 +78,10 @@
         $(".swal-edit-button").click(function() {
             let id = $(this).data("id");
             let token = $("input[name=_token]").val();
+            console.log(id);
 
             // Injecting an id with relevant data on click for updating on #swal-update-button
-            $("#swal-update-button").attr("data-id", id);
+            // $("#swal-update-button").attr("data-id", id);
 
             $.ajax({
                 url: "kriteria/json/" + id + "/edit",
@@ -90,7 +91,10 @@
                     _token: token
                 },
                 success: function(data) {
+                    //div modal
+                    $("#modalLabel").html(data.data.name)
                     $("#name_edit").val(data.data.name)
+
                 },
                 error: function(data) {
                     Swal.fire("Gagal!", "Tidak dapat melihat info kategori buku.", "warning");

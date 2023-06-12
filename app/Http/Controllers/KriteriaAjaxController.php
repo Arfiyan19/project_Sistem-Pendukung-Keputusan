@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Detail_alt;
 use App\Http\Controllers\Controller;
 use App\Kriteria;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class KriteriaAjaxController extends Controller
 {
@@ -58,7 +60,12 @@ class KriteriaAjaxController extends Controller
      */
     public function show($id)
     {
-        //
+        $detail = Kriteria::where('id', $id)->first();
+        // $alternatif = Alternatif::where('id', $id)->first();
+        return response()->json([
+            'success' => true,
+            'data' => $detail,
+        ]);
     }
 
     /**
@@ -69,7 +76,7 @@ class KriteriaAjaxController extends Controller
      */
     public function edit($id)
     {
-        $kriteria = Kriteria::findOrFail($id);
+        $kriteria = db::table('kriterias')->where('id', $id)->first();
 
         return response()->json(['status' => 200, 'message' => 'Success', 'data' => $kriteria], 200);
     }
@@ -94,7 +101,9 @@ class KriteriaAjaxController extends Controller
      */
     public function destroy($id)
     {
-        kriteria::where('id', $id)->delete();
+        // kriteria::where('id', $id)->delete();
+        $detail = Detail_alt::where('kriteria_id', $id)->delete();
+        $kriteria = Kriteria::where('id', $id)->delete();
         return response()->json([
             'success' => true,
             'message' => 'Data berhasil dihapus'

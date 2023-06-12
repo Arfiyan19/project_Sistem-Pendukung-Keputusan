@@ -21,11 +21,18 @@
                                 use Illuminate\Support\Facades\DB as db;
 
                                 $query = db::table('alternatifs')->select('id')->orderBy('id', 'desc')->limit(1)->get();
-                                foreach ($query as $row) {
-                                    $id = $row->id + 1;
+                                if ($query->isEmpty()) {
+                                    $id = 1;
                                     echo "<input type='hidden' class='form-control' id='id_alter2natif' name='id_alter2natif' value='$id' readonly>";
                                     echo "<input type='text' class='form-control' id='id_alternatif' name='id_alternatif' value='$id' readonly>";
-                                } ?>
+                                } else {
+                                    foreach ($query as $row) {
+                                        $id = $row->id + 1;
+                                        echo "<input type='hidden' class='form-control' id='id_alter2natif' name='id_alter2natif' value='$id' readonly>";
+                                        echo "<input type='text' class='form-control' id='id_alternatif' name='id_alternatif' value='$id' readonly>";
+                                    }
+                                }
+                                ?>
 
                             </div>
                         </div>
